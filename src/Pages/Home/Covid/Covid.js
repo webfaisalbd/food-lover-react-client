@@ -10,10 +10,8 @@ const Covid = () => {
             <Container className="mb-2">
                 
                 <div className="row">
-                    <div className="col-12 col-md-6">
-                        <img src="https://thumbs.dreamstime.com/z/premium-membership-badge-stamp-golden-red-ribbon-text-30827692.jpg" alt="" className="w-50" />
-                    </div>
-                    <div className="col-12 col-md-6 text-start">
+                    
+                    <div className="col-12 col-md-6 w-50 mx-auto">
                     <form className="mt-5">
                     <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
