@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Mr Jahangir",
+        "salary": 15000,
+        "area": "Dhanmondhi",
+        "img": "https://i.ibb.co/KynNjDw/boy1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Mr Khalil",
+        "salary": 14500,
+        "area": "Mirpur",
+        "img": "https://i.ibb.co/9hwrpxt/boy2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Md Imam",
+        "salary": 11000,
+        "area": "Gulshan",
+        "img": "https://i.ibb.co/bg0kWDc/boy3.jpg"
+    }
+
+]
