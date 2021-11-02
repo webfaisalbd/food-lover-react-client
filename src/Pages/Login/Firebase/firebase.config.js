@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBJZ5xAi4IF9_nGcYeNFlMzf9LKH-EHz1w",
-  authDomain: "food-lover-mern.firebaseapp.com",
-  projectId: "food-lover-mern",
-  storageBucket: "food-lover-mern.appspot.com",
-  messagingSenderId: "1065140964940",
-  appId: "1:1065140964940:web:c47ab95202c1ce3f722ee9"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
   };
   export default firebaseConfig;
