@@ -14,6 +14,7 @@ import Signup from './Pages/Signup/Signup';
 import Covid from './Pages/Home/Covid/Covid';
 import AddNewService from './Pages/AddNewService/AddNewService';
 import MyBookings from './Pages/MyBookings/MyBookings';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 
 
 
@@ -56,6 +57,9 @@ function App() {
 
             <Route path="/addNewService">
                  <AddNewService></AddNewService>
+            </Route>
+            <Route path="/ManageAllOrders">
+                 <ManageAllOrders></ManageAllOrders>
             </Route>
 
             <Route path="/MyBookings">

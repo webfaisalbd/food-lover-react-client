@@ -13,27 +13,24 @@ const MyBookings = () => {
             
     }, [])
 
-    const handleDelete= id => {
-        const url=`https://ancient-island-16836.herokuapp.com/users/${id}`;
-        fetch(url, {
-            method:'DELETE'
-        })
-        .then(res=>{
+    // const handleDelete= id => {
+    //     const url=`https://ancient-island-16836.herokuapp.com/users/${id}`;
+    //     fetch(url, {
+    //         method:'DELETE'
+    //     })
+    //     .then(res=>{
             
-                    alert('Deleted successfully');
+    //                 alert('Deleted successfully');
                     
                 
-        })
+    //     })
         
-    }
-
-// my editing panel 
-// 
+    // }
 
 
     return (
         <div id="users">
-            <h2 className="mt-5 text-info">Users information</h2>
+            <h2 className="mt-5 text-info">Manage All Orders</h2>
 
             <div className="row">
               {
@@ -43,7 +40,7 @@ const MyBookings = () => {
                     <p>{user.name}</p>
                     <p>{user.email}</p>
                     <p>{user.address}</p>
-                    <button className="btn btn-danger" onClick={()=> handleDelete(user._id)}>Delete</button>
+                    <button className="btn btn-danger" >Delete</button>
                     </div>
                   </div>
                   )
