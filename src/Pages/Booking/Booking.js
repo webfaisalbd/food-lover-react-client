@@ -12,7 +12,7 @@ const Booking = () => {
 const [serviceDetails,setServiceDetails]=useState([])
 
 useEffect(()=>{
-    fetch(`http://localhost:5000/services/${serviceId}`)
+    fetch(`https://ancient-island-16836.herokuapp.com/${serviceId}`)
     .then(res=>res.json())
     .then(data=>setServiceDetails(data))
 },[])
@@ -22,7 +22,7 @@ const { register, handleSubmit,reset} = useForm();
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/users', data)
+        axios.post('https://ancient-island-16836.herokuapp.com/users', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

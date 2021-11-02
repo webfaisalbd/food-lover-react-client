@@ -6,7 +6,7 @@ const MyBookings = () => {
 
     const [users, setUsers] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch(`https://ancient-island-16836.herokuapp.com/users`)
             .then(res => res.json())
             .then(data => setUsers(data));
             
@@ -14,7 +14,7 @@ const MyBookings = () => {
     }, [])
 
     const handleDelete= id => {
-        const url=`http://localhost:5000/users/${id}`;
+        const url=`https://ancient-island-16836.herokuapp.com/users/${id}`;
         fetch(url, {
             method:'DELETE'
         })
