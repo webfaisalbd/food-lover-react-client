@@ -1,6 +1,6 @@
 # Project Name : Food-Lover
 
-Project Live Site -
+Project Live Site - https://food-lover-mern.web.app/
 
 ## Technologies
 
@@ -9,6 +9,8 @@ Project Live Site -
 - React Route
 - React Hooks
 - Firebase
+- Node js
+- MongoDB
 - Heroku
 
 ### Features
