@@ -1,6 +1,6 @@
-# Project Name : e-Medicine
+# Project Name : Food-Lover
 
-Project Live Site -https://e-medicine-react.web.app/
+Project Live Site -
 
 ## Technologies
 
@@ -9,15 +9,17 @@ Project Live Site -https://e-medicine-react.web.app/
 - React Route
 - React Hooks
 - Firebase
+- Heroku
 
 ### Features
 
 
-- You can get all your medicine at home.
-- In immergency time, you can get your medicine like night time .
+- You can get all kind of food delivery at home.
+- In immergency time, you can get your food like night time .
 - We provide discount.
-- We provide covid vaccine.
-- Interested people can get registered for covid vaccine at home.
+- We provide special health maintain for our delivery boys for covid situation.
+- We provide special service for our premium members.
+
 
 ###  My Special Key features?
 
