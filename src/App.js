@@ -58,11 +58,11 @@ function App() {
             <Route path="/addNewService">
                  <AddNewService></AddNewService>
             </Route>
-            <Route path="/ManageAllOrders">
+            <Route path="/MyBookings">
                  <ManageAllOrders></ManageAllOrders>
             </Route>
-
-            <Route path="/MyBookings">
+            
+            <Route path="/ManageAllOrders">
                  <MyBookings></MyBookings>
             </Route>
 

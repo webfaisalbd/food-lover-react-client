@@ -33,8 +33,6 @@ const { register, handleSubmit,reset} = useForm();
 
         }
 
-// const foundDetails= serviceDetails.find(singleService=>singleService.id===Number(serviceId))
-//  console.log(foundDetails);
 
 
     return (
@@ -65,6 +63,7 @@ const { register, handleSubmit,reset} = useForm();
                 <input {...register("email", { required: true, maxLength: 150 })} defaultValue={user.email} />
                 <textarea {...register("address")} placeholder="address" />
                 <input type="number" {...register("contactNumber")} placeholder="contact-number" />
+                
                 
                 <input type="submit" />
             </form>

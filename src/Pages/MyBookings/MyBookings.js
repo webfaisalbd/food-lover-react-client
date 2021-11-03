@@ -13,19 +13,6 @@ const MyBookings = () => {
             
     }, [])
 
-    // const handleDelete= id => {
-    //     const url=`https://ancient-island-16836.herokuapp.com/users/${id}`;
-    //     fetch(url, {
-    //         method:'DELETE'
-    //     })
-    //     .then(res=>{
-            
-    //                 alert('Deleted successfully');
-                    
-                
-    //     })
-        
-    // }
 
 
     return (
