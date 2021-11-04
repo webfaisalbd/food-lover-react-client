@@ -12,10 +12,12 @@ const Booking = () => {
 const [serviceDetails,setServiceDetails]=useState([])
 
 useEffect(()=>{
-    fetch(`https://ancient-island-16836.herokuapp.com/${serviceId}`)
+    fetch(`https://ancient-island-16836.herokuapp.com/services/${serviceId}`)
     .then(res=>res.json())
     .then(data=>setServiceDetails(data))
-},[])
+    
+
+},[serviceId])
 
 const { register, handleSubmit,reset} = useForm();
 

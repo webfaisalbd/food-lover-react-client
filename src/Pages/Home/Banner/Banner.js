@@ -17,7 +17,7 @@ const Banner = () => {
     />
     <Carousel.Caption>
       
-      
+      <h3>Fastest Delivery Services</h3> 
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -29,7 +29,7 @@ const Banner = () => {
 
     <Carousel.Caption>
       
-      
+    <h3>Delivery Cost depends on Area but avg 30/-</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -40,7 +40,7 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      
+    <h3>24/7 hour services</h3>
       
     </Carousel.Caption>
   </Carousel.Item>

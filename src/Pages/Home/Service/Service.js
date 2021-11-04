@@ -13,13 +13,13 @@ const Service = ({service}) => {
           <Card className="mx-auto pb-2" style={{ width: "21rem",backgroundColor:"lightcyan" }}>
             <Card.Img variant="top" className="img-fluid p-2" src={img} />
             <Card.Body className="my-1 py-1">
-              <Card.Title>{name}</Card.Title>
+              <Card.Title> <h4>{name}</h4> </Card.Title>
             </Card.Body>
             <Card.Body className="my-1 py-1">
-              <h4>Product Price: {price}$</h4>
+              <h6>Product Price: {price}$</h6>
             </Card.Body>
             <Card.Body className="my-1 py-1">
-              <h4>Delivery Charge: {deliveryCharge}$</h4>
+              <p>Delivery Charge: {deliveryCharge}$</p>
             </Card.Body>
             <p>{element}</p>
             <Link to={`/booking/${_id}`}>

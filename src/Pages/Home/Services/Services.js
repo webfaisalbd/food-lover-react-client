@@ -8,7 +8,11 @@ const Services = () => {
     useEffect(() => {
         fetch('https://ancient-island-16836.herokuapp.com/services')
             .then(res => res.json())
-            .then(data => setServices(data));
+            .then(data => {
+                setServices(data)
+                console.log(data);
+            });
+
             // .then(data => setServices(data.slice(0,6)));
     }, [])
 
@@ -20,7 +24,8 @@ const Services = () => {
              services.length ? <Row>
             {
                 services.map(service=> <Service 
-                    key={service.id}
+                    key={service._id}
+
                     service={service}
                 ></Service>)
             }
