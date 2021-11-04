@@ -24,7 +24,12 @@ const { register, handleSubmit,reset} = useForm();
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://ancient-island-16836.herokuapp.com/users', data)
+
+        const status = "Pending";
+        const bookingItem = { ...data, status };
+
+
+        axios.post('https://ancient-island-16836.herokuapp.com/users', bookingItem)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
