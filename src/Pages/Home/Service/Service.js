@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
 
-    const {_id,name,img,element,price} =service;
+    const {_id,name,img,element,price,deliveryCharge} =service;
 
     return (
         <Col sm={12} md={6} lg={4}>
@@ -16,7 +16,10 @@ const Service = ({service}) => {
               <Card.Title>{name}</Card.Title>
             </Card.Body>
             <Card.Body className="my-1 py-1">
-              <h4>Price: {price}$</h4>
+              <h4>Product Price: {price}$</h4>
+            </Card.Body>
+            <Card.Body className="my-1 py-1">
+              <h4>Delivery Charge: {deliveryCharge}$</h4>
             </Card.Body>
             <p>{element}</p>
             <Link to={`/booking/${_id}`}>

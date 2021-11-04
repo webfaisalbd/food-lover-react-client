@@ -17,7 +17,7 @@ const Delivery = ({delivery}) => {
                         <Card.Title>{name}</Card.Title>
                   </Card.Body>
                   <Card.Body className="my-1 py-1">
-                        <h4>Price: {salary}$</h4>
+                        <h4>Salary: {salary}$</h4>
                    </Card.Body>
                    <p>{area}</p>
 
