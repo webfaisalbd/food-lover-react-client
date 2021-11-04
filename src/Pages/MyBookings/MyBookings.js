@@ -13,10 +13,7 @@ const MyBookings = () => {
   useEffect(() => {
       fetch('https://ancient-island-16836.herokuapp.com/users')
           .then(res => res.json())
-          .then(data => {
-              const value = data.filter(db => db.email === user.email)
-              setUsers(value);
-          });
+          .then(data => setUsers(data));
 
   }, [approved])
 
@@ -82,8 +79,8 @@ const MyBookings = () => {
               <Table striped bordered hover>
                   <thead>
                       <tr>
-                          <th>Event</th>
-                          <th>Traveller</th>
+                          <th>Name</th>
+                          <th>Address</th>
                           <th>Email</th>
                           <th>Date</th>
                           <th>Status</th>
@@ -94,8 +91,8 @@ const MyBookings = () => {
                       {
                           users.map(user =>
                               <tr>
-                                  <td>{user.address}</td>
                                   <td>{user.name}</td>
+                                  <td>{user.address}</td>
                                   <td>{user.email}</td>
                                   <td>{user.date}</td>
                                   <td>{user.status}</td>
