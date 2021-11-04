@@ -52,7 +52,7 @@ const ManageAllOrders = () => {
            <p>Address:{user.address}</p>
            <p>Date:{user.date}</p>
            <button className="btn btn-danger" onClick={()=> handleDelete(user._id)}>Delete</button>
-           <button className="btn btn-danger pe-2" >{user.status}</button>
+           <button className="btn btn-danger me-2" >{user.status}</button>
            </div>
          </div> )
        }
