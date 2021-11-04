@@ -29,6 +29,7 @@ const MyBookings = () => {
     <th>Name</th>
     <th>Email</th>
     <th>Address</th>
+    <th>Date</th>
     <th>Status</th>
     <th>Action</th>
   </tr>
@@ -41,6 +42,7 @@ const MyBookings = () => {
     <td>{user.name}</td>
     <td>{user.email}</td>
     <td>{user.address}</td>
+    <td>{user.date}</td>
     <td>Pending</td>
     <td> <Button className="btn btn-primary">✔</Button> <Button className="btn btn-primary">❌</Button> </td>
   </tr>

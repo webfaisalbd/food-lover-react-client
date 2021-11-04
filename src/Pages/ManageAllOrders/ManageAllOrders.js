@@ -47,9 +47,10 @@ const ManageAllOrders = () => {
        {
            users.map(user=> <div className="col-md-4">
            <div className="p-3 m-2 shadow-lg rounded border border-success" style={{ width: "21rem",backgroundColor:"lightcyan"}}>
-           <p>{user.name}</p>
-           <p>{user.email}</p>
-           <p>{user.address}</p>
+           <p>Name:{user.name}</p>
+           <p>Email:{user.email}</p>
+           <p>Address:{user.address}</p>
+           <p>Date:{user.date}</p>
            <button className="btn btn-danger" onClick={()=> handleDelete(user._id)}>Delete</button>
            </div>
          </div> )
