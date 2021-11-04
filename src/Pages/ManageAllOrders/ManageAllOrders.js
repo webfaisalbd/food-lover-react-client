@@ -60,3 +60,5 @@ const ManageAllOrders = () => {
     );
 };
 export default ManageAllOrders;
+
+

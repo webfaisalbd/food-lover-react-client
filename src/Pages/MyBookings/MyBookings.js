@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Row } from 'react-bootstrap';
+import { Button, Card, Row, Table } from 'react-bootstrap';
 
 const MyBookings = () => {
 
@@ -20,18 +20,37 @@ const MyBookings = () => {
             <h2 className="mt-5 text-info">Manage All Orders</h2>
 
             <div className="row">
-              {
-                users.map(user=>
-                  <div className="col-md-4">
-                    <div className="p-3 m-2 shadow-lg rounded border border-success" style={{ width: "21rem",backgroundColor:"lightcyan"}}>
-                    <p>{user.name}</p>
-                    <p>{user.email}</p>
-                    <p>{user.address}</p>
-                    <button className="btn btn-danger" >Delete</button>
-                    </div>
-                  </div>
-                  )
-              }
+              
+
+<Table striped bordered hover variant="secondary">
+<thead>
+  <tr>
+    
+    <th>Name</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+ {
+   users.map(user => 
+    <tr>
+    
+    <td>{user.name}</td>
+    <td>{user.email}</td>
+    <td>{user.address}</td>
+    <td>Pending</td>
+    <td> <Button className="btn btn-primary">✔</Button> <Button className="btn btn-primary">❌</Button> </td>
+  </tr>
+   )
+ }
+  
+  
+</tbody>
+</Table>
+                
             </div>
       
   </div>
