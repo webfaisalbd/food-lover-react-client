@@ -50,9 +50,11 @@ const ManageAllOrders = () => {
            <p>Name:{user.name}</p>
            <p>Email:{user.email}</p>
            <p>Address:{user.address}</p>
-           <p>Date:{user.date}</p>
+           <p>Order Date:{user.date}</p>
+           <div  className="d-flex justify-content-between">
            <button className="btn btn-danger" onClick={()=> handleDelete(user._id)}>Delete</button>
-           <button className="btn btn-danger me-2" >{user.status}</button>
+           <button className="btn btn-warning me-2" >{user.status}</button>
+           </div>
            </div>
          </div> )
        }
