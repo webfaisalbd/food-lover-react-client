@@ -1,4 +1,6 @@
 import React from 'react';
+import { Nav } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import './Footer.css';
 
 
@@ -21,10 +23,10 @@ const Footer = () => {
                         <div className="col-md-2">
                             <div className="footer-menu-container">
                                 <ul>
-                                    <li className="footer-menu fw-bold">Home</li>
-                                    <li className="footer-menu fw-bold">Services</li>
-                                    <li className="footer-menu fw-bold">Delivery Boy</li>
-                                    <li className="footer-menu fw-bold"> About us</li>
+                                    <li className="footer-menu"><Nav.Link as={HashLink} to="/home#home">Home</Nav.Link></li>
+                                    <li className="footer-menu"><Nav.Link as={HashLink} to="/services">Services</Nav.Link></li>
+                                    <li className="footer-menu"><Nav.Link as={HashLink} to="/deliveries">Delivery Boys</Nav.Link></li>
+                                    <li className="footer-menu"><Nav.Link as={HashLink} to="">About Us</Nav.Link></li>
                                 </ul>
                             </div>
                         </div>

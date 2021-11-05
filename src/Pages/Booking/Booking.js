@@ -68,9 +68,14 @@ const { register, handleSubmit,reset} = useForm();
         <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name", { required: true, maxLength: 150 })} defaultValue={user.displayName} />
                 <input {...register("email", { required: true, maxLength: 150 })} defaultValue={user.email} />
-                <textarea {...register("address")} placeholder="Address" />
-                <input type="date" {...register("date")} placeholder="order date" />
-                <input type="number" {...register("contactNumber")} placeholder="contact-number" />
+                {/* dynamic name  */}
+                <input {...register("productName", { required: true, maxLength: 150 })} defaultValue={serviceDetails?.name} />
+                <input {...register("price", { required: true, maxLength: 150 })} defaultValue={serviceDetails?.price} />
+                {/* ------------------ */}
+                <input type="number" {...register("quantity", { required: true, maxLength: 150 })} placeholder="Quantity" />
+                <textarea {...register("address", { required: true, maxLength: 150 })} placeholder="Address" />
+                <input type="date" {...register("date", { required: true, maxLength: 150 })} placeholder="order date" />
+                <input type="number" {...register("contactNumber", { required: true, maxLength: 150 })} placeholder="contact-number" />
                 
                 
                 <input type="submit" />
