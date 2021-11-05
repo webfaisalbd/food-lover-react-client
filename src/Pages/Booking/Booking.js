@@ -57,7 +57,7 @@ const { register, handleSubmit,reset} = useForm();
     <p className="card-text"><span className="fw-bold">Price:</span> {serviceDetails?.price}tk</p>
     
     <p className="card-text"><span className="fw-bold">Description::</span> {serviceDetails?.description}</p>
-    <button className="btn btn-regular bg-success">Confirm Order</button>
+    
 
 </div>
 
@@ -78,7 +78,7 @@ const { register, handleSubmit,reset} = useForm();
                 <input type="number" {...register("contactNumber", { required: true, maxLength: 150 })} placeholder="contact-number" />
                 
                 
-                <input type="submit" />
+                <input type="submit"  className="btn btn-regular bg-success"/>
             </form>
         </div>
             
