@@ -1,10 +1,9 @@
-# Project Name : Food-Lover
-
-Project Live Site - https://food-lover-mern.web.app/
+# Project Name : 
+Project Live Site - 
 
 ## Technologies
 
-- React bootstrap
+- Material UI
 - React
 - React Route
 - React Hooks
@@ -16,11 +15,13 @@ Project Live Site - https://food-lover-mern.web.app/
 ### Features
 
 
-- You can get all kind of food delivery at home.
-- In immergency time, you can get your food like night time .
+- You can get all types of bikes.
+- We provide load system
+- Budget friendly
 - We provide discount.
-- We provide special health maintain for our delivery boys for covid situation.
 - We provide special service for our premium members.
+- Online order.
+- Prebook System.
 
 
 ###  My Special Key features?
