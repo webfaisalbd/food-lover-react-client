@@ -3,7 +3,7 @@ Project Live Site - https://food-lover-mern.web.app/
 
 ## Technologies
 
-- Material UI
+- Bootstrap
 - React
 - React Route
 - React Hooks
@@ -15,9 +15,8 @@ Project Live Site - https://food-lover-mern.web.app/
 ### Features
 
 
-- You can get all types of bikes.
-- We provide load system
-- Budget friendly
+- You can get all types of foods.
+- Budget friendly.
 - We provide discount.
 - We provide special service for our premium members.
 - Online order.
